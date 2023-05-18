@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Inter";
-    src: url(../fonts/Circe/circe.ttf);
+    src: url(../fonts/Inter/inter.ttf);
 }
 
 @font-face {
     font-family: "Canela";
-    src: url(../fonts/Canela/canela_roman.otf);
+    src: url(../fonts/Canela/canela.ttf);
 }
 
 * {
