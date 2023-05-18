@@ -1,0 +1,1237 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Circe/circe.ttf);
+}
+
+@font-face {
+    font-family: "Canela";
+    src: url(../fonts/ComicSansMS/comic.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background-color: #090F1D;
+}
+
+h1 {
+    font-family: 'Canela';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 120%;
+    color: #FFFFFD;
+}
+
+.h1-1 {
+    color:#D3F85A;
+}
+
+h2 {
+    font-family: 'Canela';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFD;
+    padding-right: 28px;
+}
+
+.h2-1 {
+    color: #D3F85A;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFD;
+}
+
+.p-1 {
+    margin-top: 20px;
+}
+
+.p-2 {
+    color: #D3F85A;
+}
+
+.p-3_1 {
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.p-3_1:hover {
+    color: #D3F85A;
+}
+
+.p-3 {
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 8px;
+}
+
+.p-4 {
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.p-4:hover {
+    color: #D3F85A;
+}
+
+.p2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFD;
+}
+
+.p3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1290px;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 106px;
+}
+
+nav a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFD;
+    opacity: 72%;
+    margin-right: 40px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav a:after { 
+    content: ""; 
+    display: block; 
+    height: 1px; 
+    width: 100%; 
+    opacity: 0; 
+    background-color: #D3F85A; 
+    top: 100%; 
+    position: absolute; 
+    left: 0; 
+    z-index: 1; 
+    transition: .5s; 
+}
+
+nav a:hover:after { 
+    opacity: 1; 
+}
+
+nav .a-but:hover:after { 
+    opacity: 0; 
+}
+
+nav a:last-child {
+    margin-right: 0px;
+}
+
+.a-but {
+    opacity: 100%;
+}
+
+button {
+    background: #D3F85A;
+    padding: 16.5px 40px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    opacity: 100%;
+    color: #090F1D;
+}
+
+button:hover {
+    color: #D3F85A;
+    background: #131E3A;
+    border: 1px solid #D3F85A;
+}
+
+.butcont {
+    opacity: 100%;
+}
+
+.flex-card1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 52px;
+}
+
+.item1 {
+    width: 470px;
+}
+
+.item2 {
+    width: 600px;
+    position: relative;
+}
+
+.knopki {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.cifri {
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+}
+
+.cifra1, .cifra2 {
+    border-right: 1px solid #D3F85A;
+}
+
+.cifra2, .cifra3 {
+    margin-left: 94px;
+}
+
+.time {
+    position: absolute;
+    border-top: 1px solid #D3F85A;
+    box-shadow: 0px 9px 50px rgba(23, 36, 65, 0.04);
+    border-radius: 16px;
+    display: block;
+    cursor: default;
+    padding: 20px;
+    background: #131E3A;
+    width: 304px;
+    right: 0;
+    top: 468px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.butplace {
+    margin-top: 24px;
+    padding: 16.5px 87px;
+}
+
+.sec-2 {
+    margin-top: 210px;
+}
+
+.txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.grid-card1 {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 30px;
+    padding-top: 64px;
+}
+
+.card {
+    flex-direction: column;
+    border-radius: 28px;
+    border-top: 1px solid #D3F85A;
+    background: #131E3A;
+    padding: 20px;
+}
+
+.podfoto {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.podpodfoto {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.sec-3 {
+    padding-top: 118px;
+}
+
+.txt2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-card2 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px;
+    padding-top: 64px;
+}
+
+.butcard {
+    cursor: pointer;
+}
+
+.ava5 {
+    width: 300px;
+    height: 311px;
+}
+
+.ava6 {
+    width: 520px;
+    height: 311px;
+}
+
+.ava7 {
+    width: 410px;
+    height: 311px;
+}
+
+.ava8 {
+    width: 410px;
+    height: 311px;
+}
+
+.ava9 {
+    width: 410px;
+    height: 652px;
+}
+
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.card3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.card4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.card5 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+footer {
+    margin-top: 92px;
+}
+
+.flex-card2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    margin-top: 24px;
+    padding-bottom: 50px;
+}
+
+.butlink {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 0px 0px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.butlink:hover {
+    background-color: #D3F85A;
+}
+
+.logotip {
+    margin-right: 293px;
+}
+
+.item3 {
+    margin-right: 94px;
+}
+
+.item3:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1350px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .p-4 {
+        margin-top: 6px;
+    }
+
+    .p2 {
+        font-size: 16px;
+    }
+
+    .p3 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .container {
+        max-width: 950px;
+    }
+
+    button {
+        padding: 15px 34px;
+        font-size: 12px;
+    }
+
+    .cifra2, .cifra3 {
+        margin-left: 82px;
+    }
+
+    .ochki {
+        width: 450px;
+    }
+
+    .time {
+        width: 260px;
+        top: 400px
+    }
+
+    .butplace {
+        margin-top: 20px;
+        padding: 12px 77px;
+    }
+
+    .card {
+        padding: 16px;
+    }    
+
+    .fotka {
+        width: 100%;
+    }
+
+    .cena {
+        width: 25%;
+    }
+
+    .timing {
+        width: 30%;
+    }
+
+    .butfoto {
+        padding: 10px 28px;
+    }
+
+    .grid-card2 {
+        grid-gap: 20x;
+        padding-top: 56px;
+    }
+
+    .ava5 {
+        width: 216px;
+        height: 224px;
+    }
+    
+    .ava6 {
+        width: 374px;
+        height: 224px;
+    }
+    
+    .ava7 {
+        width: 295px;
+        height: 224px;
+    }
+    
+    .ava8 {
+        width: 295px;
+        height: 224px;
+    }
+    
+    .ava9 {
+        width: 295px;
+        height: 470px;
+    }
+
+    .logotip {
+        margin-right: 200px;
+    }
+
+    .item3 {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-right: 16px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    .p-1 {
+        margin-top: 10px;
+    }
+
+    .p-4 {
+        margin-top: 5px;
+    }
+
+    .p2 {
+        font-size: 11px;
+    }
+
+    .p3 {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+
+    .container {
+        max-width: 650px;
+    }
+
+    .flex-nav {
+        min-height: 70px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    button {
+        padding: 10px 22px;
+        border-radius: 6px;
+        font-size: 11px;
+    }
+
+    .flex-card1 {
+        padding-top: 30px;
+    }
+
+    .item1 {
+        width: 310px;
+    }
+
+    .item2 {
+        width: 320px;
+    }
+
+    .knopki {
+        padding-top: 20px;
+    }
+
+    .cifri {
+        margin-top: 30px;
+    }
+
+    .cifra2, .cifra3 {
+        margin-left: 50px;
+    }
+
+    .ochki {
+        width: 280px;
+    }
+
+    .time {
+        padding: 15px;
+        width: 200px;
+        top: 250px
+    }
+
+    .butplace {
+        margin-top: 20px;
+        padding: 10px 54px;
+    }
+
+    .sec-2 {
+        margin-top: 120px;
+    }
+
+    .grid-card1 {
+        column-gap: 20px;
+        padding-top: 40px;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 15px;
+    }    
+
+    .fotka {
+        width: 100%;
+    }
+
+    .cena {
+        width: 25%;
+    }
+
+    .timing {
+        width: 30%;
+    }
+
+    .butfoto {
+        padding: 6px 18px;
+        font-size: 8px;
+    }
+
+    .sec-3 {
+        padding-top: 100px;
+    }
+
+    .grid-card2 {
+        grid-gap: 14px;
+        padding-top: 40px;
+    }
+
+    .ava5 {
+        width: 151px;
+        height: 157px;
+    }
+    
+    .ava6 {
+        width: 262px;
+        height: 157px;
+    }
+    
+    .ava7 {
+        width: 207px;
+        height: 157px;
+    }
+    
+    .ava8 {
+        width: 207px;
+        height: 157px;
+    }
+    
+    .ava9 {
+        width: 207px;
+        height: 329px;
+    }
+
+    .link {
+        margin-top: 15px;
+        padding-bottom: 50px;
+    }
+
+    .butlink {
+        display: flex;
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+        margin-right: 12px;
+    }
+    
+    .fb {
+        width: 40%;
+    }
+    
+    .tg {
+        width: 60%;
+    }
+
+    .twit {
+        width: 60%;
+    }
+
+    .ins {
+        width: 60%;
+    }
+
+    .logotip {
+        margin-right: 100px;
+    }
+
+    .item3 {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-right: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .p-1 {
+        margin-top: 10px;
+    }
+
+    .p-4 {
+        margin-top: 5px;
+    }
+
+    .p2 {
+        font-size: 18px;
+    }
+
+    .p3 {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    .container {
+        max-width: 425px;
+    }
+
+    .flex-nav {
+        min-height: 70px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-right: 20px;
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    button {
+        padding: 10px 22px;
+        border-radius: 6px;
+        font-size: 11px;
+    }
+
+    .flex-card1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .item1 {
+        width: 310px;
+    }
+
+    .item2 {
+        margin-top: 30px;
+        width: 320px;
+    }
+
+    .knopki {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .cifri {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .cifra2, .cifra3 {
+        margin-left: 50px;
+    }
+
+    .ochki {
+        width: 280px;
+    }
+
+    .time {
+        padding: 15px;
+        width: 200px;
+        top: 250px
+    }
+
+    .butplace {
+        margin-top: 20px;
+        padding: 10px 54px;
+    }
+
+    .sec-2 {
+        margin-top: 120px;
+    }
+
+    .grid-card1 {
+        column-gap: 20px;
+        padding-top: 40px;
+        grid-template-columns:repeat(1, 0.8fr);
+        row-gap: 10px;
+        justify-content: center;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 15px;
+    }    
+
+    .fotka {
+        width: 100%;
+    }
+
+    .cena {
+        width: 25%;
+    }
+
+    .timing {
+        width: 30%;
+    }
+
+    .butfoto {
+        padding: 6px 18px;
+        font-size: 12px;
+    }
+
+    .sec-3 {
+        padding-top: 100px;
+    }
+
+    .grid-card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 14px;
+        padding-top: 40px;
+    }
+    
+    .ava5 {
+        width: 340px;
+        height: auto;
+    }
+    
+    .ava6 {
+        width: 340px;
+        height: auto;
+    }
+    
+    .ava7 {
+        width: 340px;
+        height: auto;
+    }
+    
+    .ava8 {
+        width: 340px;
+        height: auto;
+    }
+    
+    .ava9 {
+        width: 340px;
+        height: auto;
+    }
+
+    .flex-card2 {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .butlink {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        border-radius: 2px;
+        margin-right: 12px;
+    }
+    
+    .fb {
+        width: 40%;
+    }
+    
+    .tg {
+        width: 60%;
+    }
+
+    .twit {
+        width: 60%;
+    }
+
+    .ins {
+        width: 60%;
+    }
+
+    .logotip {
+        margin-right: 100px;
+    }
+
+    .item3 {
+        margin-right: 0px;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-right: 16px;
+    }
+
+    .h2-1 {
+        padding-right: 0px;
+    }    
+
+    p {
+        font-size: 12px;
+    }
+
+    .p-1 {
+        margin-top: 10px;
+    }
+
+    .p-4 {
+        margin-top: 5px;
+    }
+
+    .p2 {
+        font-size: 15px;
+    }
+
+    .p3 {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    .container {
+        max-width: 310px;
+    }
+
+    .flex-nav {
+        min-height: 70px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-right: 20px;
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    button {
+        padding: 10px 22px;
+        border-radius: 6px;
+        font-size: 11px;
+    }
+
+    .flex-card1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .item1 {
+        width: 310px;
+    }
+
+    .item2 {
+        margin-top: 30px;
+        width: 320px;
+    }
+
+    .knopki {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .cifri {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .cifra2, .cifra3 {
+        margin-left: 50px;
+    }
+
+    .ochki {
+        width: 280px;
+    }
+
+    .time {
+        padding: 15px;
+        width: 200px;
+        top: 250px
+    }
+
+    .butplace {
+        margin-top: 20px;
+        padding: 10px 54px;
+    }
+
+    .sec-2 {
+        margin-top: 120px;
+    }
+
+    .txt, .txt2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .grid-card1 {
+        column-gap: 20px;
+        padding-top: 40px;
+        grid-template-columns:repeat(1, 0.8fr);
+        row-gap: 10px;
+        justify-content: center;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 15px;
+    }    
+
+    .fotka {
+        width: 100%;
+    }
+
+    .cena {
+        width: 25%;
+    }
+
+    .timing {
+        width: 30%;
+    }
+
+    .butfoto {
+        padding: 6px 18px;
+        font-size: 12px;
+    }
+
+    .sec-3 {
+        padding-top: 100px;
+    }
+
+    .grid-card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 14px;
+        padding-top: 40px;
+    }
+    
+    .ava5 {
+        width: 248px;
+        height: auto;
+    }
+    
+    .ava6 {
+        width: 248px;
+        height: auto;
+    }
+    
+    .ava7 {
+        width: 248px;
+        height: auto;
+    }
+    
+    .ava8 {
+        width: 248px;
+        height: auto;
+    }
+    
+    .ava9 {
+        width: 248px;
+        height: auto;
+    }
+
+    .flex-card2 {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .butlink {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        border-radius: 2px;
+        margin-right: 12px;
+    }
+    
+    .fb {
+        width: 40%;
+    }
+    
+    .tg {
+        width: 60%;
+    }
+
+    .twit {
+        width: 60%;
+    }
+
+    .ins {
+        width: 60%;
+    }
+
+    .logotip {
+        margin-right: 100px;
+    }
+
+    .item3 {
+        margin-right: 0px;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+}
